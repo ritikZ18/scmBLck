@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  cursor:pointer;
+
+}
+
+.background {
+  background-color: #222222;
+  color: #fff;
+}
+
+.changeImage {
+  filter: grayscale(100%);
+}
