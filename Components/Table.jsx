@@ -20,8 +20,11 @@ export default ({ setCreateShipmentModel, allShipmentsdata }) => {
             Initiate Tracking
           </h3>
           <p className="text-gray-600 mt-2">
-            Begin tracking product delivery by entering  <span style={{ fontWeight: 'bold' }}>Recipient</span> address ,
-            <span style={{ fontWeight: 'bold' }}> Date</span> , <span style={{ fontWeight: 'bold' }}>Distance</span>, and <span style={{ fontWeight: 'bold' }}>Price</span>.  
+            Begin tracking product delivery by entering{" "}
+            <span style={{ fontWeight: "bold" }}>Recipient</span> address ,
+            <span style={{ fontWeight: "bold" }}> Date</span> ,{" "}
+            <span style={{ fontWeight: "bold" }}>Distance</span>, and{" "}
+            <span style={{ fontWeight: "bold" }}>Price</span>.
           </p>
         </div>
         <div className="mt-3 md:mt-0">
@@ -73,11 +76,22 @@ export default ({ setCreateShipmentModel, allShipmentsdata }) => {
                   {shipment.isPaid ? " Completed" : "Not Complete"}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  {shipment.status == 0
-                    ? "Pending"
-                    : shipment.status == 1
-                    ? "IN_TRANSIT"
-                    : "Delivered"}
+                  <span
+                    style={{
+                      color:
+                        shipment.status == 0
+                          ? "red"
+                          : shipment.status == 1
+                          ? "green"
+                          : "yellow",
+                    }}
+                  >
+                    {shipment.status == 0
+                      ? "Pending"
+                      : shipment.status == 1
+                      ? "IN_TRANSIT"
+                      : "Delivered"}
+                  </span>
                 </td>
               </tr>
             ))}

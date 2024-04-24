@@ -6,11 +6,11 @@ export default () => {
   const [state, setState] = useState(false);
   const { currentUser, connectWallet } = useContext(TrackingContext);
 
-  const navigation = [
-    { title: "Home ", path: "#" },
-    { title: "Services", path: "#" },
-    { title: "Contact Us", path: "#" },
-    { title: "Erc20", path: "#" },
+    const navigation = [
+      { title: "Home ", path: "/" },
+      { title: "Services", path: "/Services" },
+      { title: "Contact Us", path: "/Contact" },
+      { title: "Erc20", path: "#" },
   ];
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default () => {
   }, []);
 
   return (
-    <nav
+    <nav 
       className={`bg-white pb-5 md:text-sm ${
         state
           ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0"
@@ -30,7 +30,7 @@ export default () => {
     >
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
         <div className="flex items-center justify-between py-5 md:block">
-          <a href="javascript:void(0)">
+          <a href= '/'>
             <img
               src="https://www.svgrepo.com/show/303458/ripple-2-logo.svg"
               width={70}

@@ -8,7 +8,7 @@ export default () => {
     },
     {
       href: "javascript:void()",
-      name: "License",
+      name: "Documentation",
     },
     {
       href: "javascript:void()",

@@ -3,6 +3,11 @@ import Table from "./Table";
 import NavBar from "./NavBar";
 import Form from "./Form";
 import Services from "./Services";
+import { BrowserRouter } from "react-router-dom";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Documentation from "./pages/Documentation";
+import Contact from "./Contact";
 import Profile from "./Profile";
 import GetShipment from "./GetShipment";
 import CompleteShipment from "./CompleteShipment";
@@ -21,6 +26,10 @@ export {
   NavBar,
   Form,
   Services,
+  Contact,
+  Terms,
+  Privacy,
+  Documentation,
   Profile,
   GetShipment,
   CompleteShipment,
@@ -33,3 +42,23 @@ export {
   Fot2,
   Str1,
 };
+
+
+// export default function index(){
+
+
+//   return (
+// <div>
+//   <BrowserRouter>
+//   <Routes>
+//     <Route index element = {<Home/>}/>
+//     <Route path='/Services' element = {<Services/>}/>
+//     <Route path='/Terms' element= {<Terms/>}/>
+//   </Routes>
+//   </BrowserRouter>
+
+// </div>
+
+
+//   )
+// }

@@ -1,5 +1,6 @@
 import images from "../Images/index";
 import Image from "next/image";
+import React from "react";
 
 export default ({
   setOpenProfile,
@@ -64,3 +65,6 @@ export default ({
     </section>
   );
 };
+
+
+// export default Services;
